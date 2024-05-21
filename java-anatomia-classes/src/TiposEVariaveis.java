@@ -1,4 +1,4 @@
-public class MinhaCalsse2 {
+public class TiposEVariaveis {
     public static void main(String[] args) {
         
     }
