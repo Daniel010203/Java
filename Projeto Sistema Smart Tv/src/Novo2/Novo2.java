@@ -1,11 +1,14 @@
-package Novo;
+package Novo2;
 
 public class Novo2 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         int x = 10;
         double d = x;
         long l = x;
-        float l = x;
+        float h = 2;
         short s = 20;
         x = s;
 
@@ -14,5 +17,9 @@ public class Novo2 {
         System.out.println(valorInt);
     }
 
-    
+    @Override
+    public String toString() {
+        return "Novo2 []";
+    }
+
 }
