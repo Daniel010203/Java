@@ -17,3 +17,6 @@ public class FluxoDeConstrole {
         }  
     }
 }
+public static void main(String[] args) {
+    
+}
