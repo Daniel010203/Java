@@ -9,7 +9,7 @@ public static void main(String[] args) {
     String aprender1 = nome + slogan;
     aprender1 += " - ";
     aprender1 += slogan;
-    String aprende1 = nome.concat(" - ").concat(slogan);
+    String aprender = nome.concat(" - ").concat(slogan);
     String nome2 = new String("FIAP");
     if (nome.equals(nome2)){
         System.out.println("As Strings são iguais");
