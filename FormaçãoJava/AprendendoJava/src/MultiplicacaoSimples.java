@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class MultiplicacaoSimples {
@@ -17,5 +15,5 @@ public class MultiplicacaoSimples {
         System.out.println("PROD = " + prod);
     }
 }
-
+}
 /*  */
