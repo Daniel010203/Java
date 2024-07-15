@@ -1,3 +1,4 @@
+package FormaçãoJava.Formação;
 public class MinhaClasse {
     public static void main(String[] args) {
         String meuNome = "Fulano";
@@ -6,6 +7,10 @@ public class MinhaClasse {
         String primeiroNome = "Daniel";
         String segundoNome = "Vieira";
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+        int numero = 15;
+
+        System.out.println(++numero);
+        System.out.println(numero);
 
         System.out.println(nomeCompleto);
 
