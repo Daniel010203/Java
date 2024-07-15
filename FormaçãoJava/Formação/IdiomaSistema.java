@@ -1,3 +1,4 @@
+package FormaçãoJava.Formação;
 import java.util.Locale;
 
 public class IdiomaSistema {
