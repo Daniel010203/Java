@@ -1,0 +1,135 @@
+public class Metodos {
+    public static void main(String[] args) {
+        
+    }
+
+}
+
+Os métodos em Java são blocos de código que realizam tarefas específicas, são declarados dentro de uma classe e podem ser invocados por outras partes do programa. Eles ajudam a modularizar e reutilizar o código. Vou explicar como utilizar métodos em Java com alguns exemplos.
+
+### Estrutura de um Método
+
+Um método em Java geralmente tem a seguinte estrutura:
+
+```java
+modificador_de_acesso tipo_de_retorno nome_do_metodo(parâmetros) {
+    // Corpo do método
+}
+```
+
+- `modificador_de_acesso`: Define a visibilidade do método (`public`, `private`, `protected`, ou pacote privado).
+- `tipo_de_retorno`: Define o tipo de dado que o método retorna (`void` se não retornar nada).
+- `nome_do_metodo`: Nome do método, seguindo as convenções de nomenclatura de Java.
+- `parâmetros`: Lista de parâmetros (separados por vírgulas) que o método aceita.
+
+### Exemplo 1: Método Simples
+
+Vamos criar um método que não aceita parâmetros e não retorna valor (tipo `void`).
+
+```java
+public class Exemplo1 {
+    // Método que imprime uma mensagem
+    public void imprimirMensagem() {
+        System.out.println("Olá, mundo!");
+    }
+
+    public static void main(String[] args) {
+        Exemplo1 exemplo = new Exemplo1();
+        exemplo.imprimirMensagem(); // Invocando o método
+    }
+}
+```
+
+### Exemplo 2: Método com Parâmetros
+
+Vamos criar um método que aceita parâmetros e retorna um valor.
+
+```java
+public class Exemplo2 {
+    // Método que soma dois números e retorna o resultado
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        Exemplo2 exemplo = new Exemplo2();
+        int resultado = exemplo.somar(5, 3); // Invocando o método com argumentos
+        System.out.println("Resultado da soma: " + resultado);
+    }
+}
+```
+
+### Exemplo 3: Método com Sobrecarga
+
+A sobrecarga de métodos permite definir vários métodos com o mesmo nome, mas com diferentes listas de parâmetros.
+
+```java
+public class Exemplo3 {
+    // Método que soma dois números inteiros
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    // Método que soma três números inteiros
+    public int somar(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Exemplo3 exemplo = new Exemplo3();
+        int resultado1 = exemplo.somar(5, 3); // Invocando o método com dois argumentos
+        int resultado2 = exemplo.somar(1, 2, 3); // Invocando o método com três argumentos
+        System.out.println("Resultado da soma (dois argumentos): " + resultado1);
+        System.out.println("Resultado da soma (três argumentos): " + resultado2);
+    }
+}
+```
+
+### Exemplo 4: Método Estático
+
+Métodos estáticos pertencem à classe em vez de a uma instância específica da classe e podem ser invocados sem criar um objeto da classe.
+
+```java
+public class Exemplo4 {
+    // Método estático que calcula o quadrado de um número
+    public static int calcularQuadrado(int numero) {
+        return numero * numero;
+    }
+
+    public static void main(String[] args) {
+        int resultado = Exemplo4.calcularQuadrado(4); // Invocando o método estático
+        System.out.println("Quadrado do número: " + resultado);
+    }
+}
+```
+
+### Exemplo 5: Método Recursivo
+
+Métodos recursivos são métodos que chamam a si mesmos para resolver um problema.
+
+```java
+public class Exemplo5 {
+    // Método recursivo que calcula o fatorial de um número
+    public int calcularFatorial(int numero) {
+        if (numero == 0) {
+            return 1;
+        } else {
+            return numero * calcularFatorial(numero - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        Exemplo5 exemplo = new Exemplo5();
+        int resultado = exemplo.calcularFatorial(5); // Invocando o método recursivo
+        System.out.println("Fatorial do número: " + resultado);
+    }
+}
+```
+
+### Considerações Finais
+
+- **Modularização**: Métodos ajudam a dividir o código em partes menores e mais gerenciáveis.
+- **Reutilização**: Permitem reutilizar código sem duplicação.
+- **Manutenção**: Facilitam a manutenção e atualização do código.
+
+Esses exemplos ilustram como criar e utilizar métodos em Java para realizar diversas tarefas e como eles podem ser adaptados às suas necessidades específicas.

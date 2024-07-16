@@ -15,5 +15,4 @@ public class MultiplicacaoSimples {
         System.out.println("PROD = " + prod);
     }
 }
-}
 /*  */
